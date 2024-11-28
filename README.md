@@ -1,6 +1,6 @@
-A3
+A4 part 2
 
 
-Website Link: https://mkdirnumber1.github.io/GUI-A4-PART-1/
+Website Link: https://mkdirnumber1.github.io/GUI-A4-PART-2/
 
-GIT repository: https://github.com/MkdirNumber1/GUI-A4-PART-1/tree/master
+GIT repository: https://github.com/MkdirNumber1/GUI-A4-PART-2/tree/master
