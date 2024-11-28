@@ -1,0 +1,116 @@
+/*
+@copyright Evan Kuczynski 2024
+
+https://mkdirnumber1.github.io/GUI-A3/
+*/
+
+
+/* sets the background color, height */
+body {
+    background: linear-gradient(white, whitesmoke, antiquewhite); /*sets the nice face of colors on background*/
+    height: 100vh; /* Set body height to the full viewport */
+}
+
+/* slider adaptations  */
+.slider {
+    width: 170px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* container for form and table */
+.container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start vertically */
+    margin: 50px; /* Optional: Add some margin around the container */
+}
+
+
+/* style the form */
+#dataForm {
+    display: flex;              /* Use flexbox for the form */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: flex-start;   /* Align items to the start */
+}
+
+
+/* sets the boarder, margins and width for the multiplication table */
+table {
+    border-collapse: collapse; /* merges table borders into a single border */
+    margin-left: 100px;
+    margin-top: 80px;
+    width: 70%;
+}
+
+
+label {
+    padding-bottom: 5px;
+}
+
+
+/* Darker on hover */
+button:hover {
+    background-color: wheat;
+}
+
+
+/* make the color and font size */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+/* sets the padding alignment and boarder for the table and all separating elements*/
+th, td {
+    border: 2px solid blue;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    position: sticky;
+    top: 0; /* for top header */
+    background: white; /* optional: to avoid overlap with other content */
+}
+
+
+/* For the first column and row */
+td:first-child, th:first-child {
+    position: sticky;
+    font-weight: bold;
+    left: 0; /* for first column */
+    background: white;
+}
+
+
+/* set the patterns for the colors of the table*/
+tr:nth-child(even) {
+    background-color: skyblue; /* Light gray for even rows */
+}
+tr:nth-child(odd) {
+    background-color: pink; /* White for odd rows */
+}
+
+
+/* sets multiplication table dimensions */
+#tableContainer {
+    width: 1000px;          /* Set a fixed width for the container */
+    height: 600px;         /* Set a fixed height for the container */
+    overflow: auto;        /* Add scrollbars when content overflows */
+    margin: 40px;
+
+}
+
+/* make nice footer */
+footer {
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+
+
+/* end of my_styles.css */

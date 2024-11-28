@@ -1,0 +1,81 @@
+<!--
+@copyright Evan Kuczynski 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<!-- link the css -->
+	<link rel="stylesheet" href="CSS/my_styles.css">
+	
+	<!-- jQuery and jQuery Validation Plugin from CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<!-- Main body -->
+<body>
+
+<div class="container">
+	<!-- div for the form -->
+	<div id="formDiv">
+		<!-- form asks for input for dimensions of the table
+		includes labels to tell user what they are inputting for
+		slider and span to display error messages
+		and button for user to submit results to generate table -->
+		<form id="dataForm">
+			<h1>Multiplication Table Generator</h1>
+			
+			<!-- Starting column number -->
+			<label for="colmNumStart">Starting column number</label>
+			<div class="slider" id="colmNumStartSlider"></div>
+			<input id="colmNumStart" name="colmNumStart" placeholder="Enter start column number"><br>
+			
+			<!-- Ending column number -->
+			<label for="colmNumEnd">Ending column number</label>
+			<div class="slider" id="colmNumEndSlider"></div>
+			<input id="colmNumEnd" name="colmNumEnd" placeholder="Enter end column number"><br>
+			
+			<!-- Starting row number -->
+			<label for="minRowValue">Starting row number</label>
+			<div class="slider" id="minRowValueSlider"></div>
+			<input id="minRowValue" name="minRowValue" placeholder="Enter start row number"><br>
+			
+			<!-- Ending row number -->
+			<label for="maxRowValue">Ending row number</label>
+			<div class="slider" id="maxRowValueSlider"></div>
+			<input id="maxRowValue" name="maxRowValue" placeholder="Enter end row number"><br>
+			
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<!-- container to hold the multiplication table -->
+	<div id="tableContainer"></div>
+	
+	<!-- Container for Tabs -->
+	<div id="tabs">
+		<ul id="tabList">
+			<!-- Tab labels will be dynamically added here -->
+		</ul>
+		<div id="tabContent">
+			<!-- Tables will be displayed here in their respective tabs -->
+		</div>
+	</div>
+	
+	<!-- Delete All Tabs Button -->
+	<button id="deleteAllTabs">Delete All Tabs</button>
+	
+</div>
+
+<footer>&copy; Evan Kuczynski 2024</footer>
+
+<!-- link the js script -->
+<script src="jsScripts/scripts.js"></script>
+
+</body>
+</html>
